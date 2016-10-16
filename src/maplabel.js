@@ -33,6 +33,7 @@ function MapLabel(opt_options) {
   this.set('fontFamily', 'sans-serif');
   this.set('fontSize', 12);
   this.set('fontColor', '#000000');
+  this.set('fontStyle', 'bold');
   this.set('strokeWeight', 4);
   this.set('strokeColor', '#ffffff');
   this.set('align', 'center');
@@ -52,6 +53,7 @@ MapLabel.prototype.changed = function(prop) {
     case 'fontFamily':
     case 'fontSize':
     case 'fontColor':
+    case 'fontStyle':
     case 'strokeWeight':
     case 'strokeColor':
     case 'align':
@@ -79,7 +81,7 @@ MapLabel.prototype.drawCanvas_ = function() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   ctx.strokeStyle = this.get('strokeColor');
   ctx.fillStyle = this.get('fontColor');
-  ctx.font = this.get('fontSize') + 'px ' + this.get('fontFamily');
+  ctx.font = this.get('fontStyle') + ' ' + this.get('fontSize') + 'px ' + this.get('fontFamily');
 
   var strokeWeight = Number(this.get('strokeWeight'));
 
