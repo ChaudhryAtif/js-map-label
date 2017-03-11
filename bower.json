@@ -5,8 +5,9 @@
   "ignore": [
     "docs",
     "examples",
-    "bower.json",
-    "package.json",
-    "README.md"
-  ]
+    "README.md",
+    "screenshot.png"
+  ],
+  "dependencies": {},
+  "devDependencies": {}
 }
