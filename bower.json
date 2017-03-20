@@ -1,7 +1,7 @@
 {
   "name": "js-map-label",
   "version": "0.0.1",
-  "main": "src/maplabel-compiled.js",
+  "main": "src/maplabel.js",
   "ignore": [
     "docs",
     "examples",
